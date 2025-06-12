@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5250005 Boonsiri Masan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+      font-family: 'Prompt', sans-serif;
+      background-color: #fff;
+      color: #222;
+      padding: 2rem;
+    }
+        body {
+            background-color: #141414;
+            color: #fff;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: transparent !important;
+            position: absolute;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .navbar-brand {
+            color: #eeeded !important;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .nav-link {
+            color: #fff !important;
+            margin-right: 15px;
+        }
+
+        .hero {
+            position: relative;
+            background-image: url('https://cdn.pixabay.com/photo/2025/03/31/21/18/tiber-river-9505401_1280.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            color: #fff;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(to top, rgba(20,20,20,0.9), rgba(20,20,20,0.3));
+            z-index: 1;
+        }
+
+        .hero .container {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .movie-row {
+            overflow-x: auto;
+            white-space: nowrap;
+            padding-bottom: 10px;
+            scrollbar-width: none; /* Firefox */
+        }
+
+        .movie-row::-webkit-scrollbar {
+            display: none; /* Chrome */
+        }
+
+        .movie-card {
+            display: inline-block;
+            width: 200px;
+            margin-right: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .movie-card:hover {
+            transform: scale(1.08);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+        }
+
+        .movie-card img {
+            border-radius: 5px;
+            width: 100%;
+            height: auto;
+        }
+
+        
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .btn-danger {
+            background-color: #e50914;
+            border: none;
+            padding: 10px 25px;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .btn-danger:hover {
+            background-color: #f6121d;
+        }
+        footer a:hover {
+        color: #e50914 !important;
+    }
+    footer input::placeholder {
+        color: #999;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">NETFLIX BOONSIRI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">TV Shows</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Movies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">My List</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to Boonsiri MAsan</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat atque sed odio soluta recusandae. Mollitia, ad debitis, cum quam similique cupiditate nihil omnis officiis nulla numquam, quas dolorum error quis magnam culpa aperiam. Excepturi modi magnam, vitae numquam dolores nam commodi ea recusandae deserunt in quod culpa rem similique minus, unde harum quia repellat molestias consectetur temporibus voluptate nulla nostrum sint. Accusantium consequuntur nam aliquam error maiores inventore molestias est dolorem ullam alias autem ratione, blanditiis non. Molestiae ducimus voluptatem, necessitatibus, dolor iste totam ex asperiores animi fugit optio ullam eum dicta laboriosam inventore, quos explicabo earum aperiam? Vel, animi.</p>
+            <button class="btn btn-danger">Watch Now</button>
+        </div>
+    </section>
+
+    <section class="container mt-5">
+        <h2 class="text-center mb-4">Popular on Netflix Boonsiri</h2>
+        <div class="movie-row d-flex justify-content-center flex-nowrap">
+            <div class="movie-card"><img src="https://cdn.pixabay.com/photo/2025/05/19/13/33/girl-9609512_640.jpg" alt="Movie 1"></div>
+            <div class="movie-card"><img src="https://cdn.pixabay.com/photo/2022/03/24/15/46/woman-7089304_640.jpg" alt="Movie 2"></div>
+            <div class="movie-card"><img src="https://cdn.pixabay.com/photo/2024/03/20/12/36/tokyo-skytree-8645455_640.jpg" alt="Movie 3"></div>
+            <div class="movie-card"><img src="https://cdn.pixabay.com/photo/2025/06/03/18/01/urban-fashion-9639853_640.jpg" alt="Movie 4"></div>
+            <div class="movie-card"><img src="https://cdn.pixabay.com/photo/2025/05/13/07/47/train-9596810_640.jpg" alt="Movie 5"></div>
+        </div>
+        <div class="movie-row d-flex justify-content-center flex-nowrap">
+            <div class="movie-card"><img src="https://cdn.pixabay.com/photo/2023/11/02/11/32/woman-8360359_640.jpg" alt="Movie 1"></div>
+            <div class="movie-card"><img src="https://cdn.pixabay.com/photo/2023/10/27/10/28/woman-8344944_640.jpg" alt="Movie 2"></div>
+            <div class="movie-card"><img src="https://cdn.pixabay.com/photo/2025/03/12/09/53/fashion-9464657_640.jpg" alt="Movie 3"></div>
+            <div class="movie-card"><img src="https://cdn.pixabay.com/photo/2023/08/06/14/34/woman-8173091_1280.jpg" alt="Movie 4"></div>
+            <div class="movie-card"><img src="https://cdn.pixabay.com/photo/2023/04/03/15/02/woman-7897053_640.jpg" alt="Movie 5"></div>
+        </div>
+    </section>
+    
+    <footer class="bg-dark text-white mt-5 pt-5 pb-4">
+        <div class="container">
+            <div class="row">
+                <!-- Column 1: Links -->
+                <div class="col-md-4 mb-4 text-center text-md-start">
+                    <h5>เกี่ยวกับเรา</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">ข้อตกลงการให้บริการ</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">นโยบายความเป็นส่วนตัว</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">การสนับสนุน</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Column 2: Newsletter Form -->
+                <div class="col-md-4 mb-4 text-center">
+                    <h5>สมัครรับข่าวสาร</h5>
+                    <form class="d-flex flex-column align-items-center">
+                        <input type="email" class="form-control mb-2 w-75" placeholder="กรอกอีเมลของคุณ" required>
+                        <button type="submit" class="btn btn-danger btn-sm">สมัคร</button>
+                    </form>
+                </div>
+    
+                <!-- Column 3: Social Media -->
+                <div class="col-md-4 mb-4 text-center text-md-end">
+                    <h5>ติดตามเรา</h5>
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3 mt-2">
+                        <a href="https://line.me" target="_blank" class="text-white fs-4"><i class="fab fa-line"></i></a>
+                        <a href="https://facebook.com" target="_blank" class="text-white fs-4"><i class="fab fa-facebook"></i></a>
+                        <a href="https://youtube.com" target="_blank" class="text-white fs-4"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+    
+            <hr class="border-secondary">
+            <p class="text-center mb-0">&copy; 2025 5250005 Boonsiri Masan</p>
+        </div>
+    </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
